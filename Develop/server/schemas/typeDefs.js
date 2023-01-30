@@ -8,15 +8,15 @@ const typeDefs = gql`
     password: String
     bookCount:
     savedBooks:
-    thoughts: [Thought]!
   }
 
-  type Thought {
-    _id: ID
-    thoughtText: String
-    thoughtAuthor: String
-    createdAt: String
-    comments: [Comment]!
+  type Book {
+    bookId: ID
+    author: String
+    description: String
+    title: String
+    image:string
+    link:string
   }
 
   type Comment {
