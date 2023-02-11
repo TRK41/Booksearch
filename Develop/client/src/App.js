@@ -3,11 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
-import {ApolloProvider,ApolloClient, InMemoryCache} from "@apollo/client"
+import { ApolloProvider, ApolloClient, InMemoryCache, gql } from "@apollo/client";
+
 
 const client = new ApolloClient({
+uri: "https://booksearching.herokuapp.com/",
 cache: new InMemoryCache(),
-uri: "/graphql",
+
+
 });
 
 
@@ -25,7 +28,7 @@ function App() {
         </Switch>
       </>
     </Router>
-    </ApolloProvider>
+   </ApolloProvider>
   );
 }
 
