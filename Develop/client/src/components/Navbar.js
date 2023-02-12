@@ -9,6 +9,7 @@ import Auth from '../utils/auth';
 const AppNavbar = () => {
   // set modal display state
   const [showModal, setShowModal] = useState(false);
+ 
 
   return (
     <>
@@ -26,6 +27,7 @@ const AppNavbar = () => {
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
+                <span> Welcome, {Auth.getProfile().data.username}!</span>
                   <Nav.Link as={Link} to='/saved'>
                     See Your Books
                   </Nav.Link>
