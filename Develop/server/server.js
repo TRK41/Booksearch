@@ -22,9 +22,12 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-// app.use(routes);
-app.get('*',(req,res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+app.use(express.static("public"));
+
+app.use(routes);
+
+app.get('*',function(req,res) {
+  res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });
 
 // Apollo server with GraphQL schema
