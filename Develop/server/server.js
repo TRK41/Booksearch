@@ -30,6 +30,7 @@ app.get('*',function(req,res) {
   res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });
 
+
 // Apollo server with GraphQL schema
 const startAppolloserver = async (typeDefs,resolvers) =>{
 await server.start();
