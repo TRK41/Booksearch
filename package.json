@@ -11,6 +11,10 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm run build"
   },
+  "repository": {
+    "type": "git",
+     "url": "https://github.com/TRK41/Booksearch.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
