@@ -18,7 +18,8 @@ const typeDefs = gql`
     image:string
     link:string
   }
-
+  
+  
 
   type Auth {
     token: ID!

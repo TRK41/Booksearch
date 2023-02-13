@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from "graohql-tag";
 
 export const GET_ME = gql`
 {
