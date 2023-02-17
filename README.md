@@ -8,7 +8,7 @@
   ## Description
  Google Book search that allows you to sign in and add books to your collection and remove books. 
   
-  <img src="assets/21-mern-homework-demo-01 (1).gif" alt="Booksearch gif" title="Book search">
+  <img src="Assets/21-mern-homework-demo-01 (1).gif" alt="Booksearch gif" title="Book search">
   
   ## Table of Contents
   -[Installation](#installation)
